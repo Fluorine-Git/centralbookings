@@ -5,9 +5,11 @@ const db = require('./config/db');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const activityRoutes = require('./routes/activityRoutes');
 
 app.use(cors());
 app.use(express.json());
+app.use('/api/activities', activityRoutes);
 
 app.get('/api/health', async (require, res) => {
     try {
