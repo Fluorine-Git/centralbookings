@@ -1,0 +1,123 @@
+/* https://colorkit.co/color/303870/ for easier color pickinig*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f4ede2;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.header {
+  grid-column: 1 / 3;
+  border: none;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+
+button, select {
+  font:inherit;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.sidebar {
+  border: none;
+  padding: 10px;
+}
+
+.sidebar select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align:center;
+}
+
+.filter-button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius:10px;
+}
+
+.filter-button:hover {
+  background: #444b7e;
+}
+
+
+.activites {
+  padding:12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  align-content: start;
+}
+
+.activity-button {
+  padding: 15px;
+  background: #bbc0d4;
+  cursor: pointer;
+  border:none;
+  color:#181c38;
+  align-content: center;
+  border-radius:10px;
+}
+
+.activity-organizer {
+  font-size:small;
+  margin-bottom:10px;
+}
+
+.activity-title {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom:10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.activity-setting {
+  font-size:medium;
+  margin-bottom:10px;
+}
+
+.activity-participants {
+  font-size:small;
+  padding:10px;
+  width: fit-content;
+  border-radius: 20px;
+  margin-left: auto; 
+}
+
+.header, .filter-button {
+  background: #303870;
+}
+
+.sidebar select, .filter-button.active {
+  background: #181c38;
+}
+
+.header h1, select, .filter-button, .filter-button:hover {
+  color: #f4ede2
+}
+
+.activity-participants, .activity-title {
+  background: #a5abc6;
+}
