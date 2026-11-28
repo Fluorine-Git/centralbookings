@@ -101,6 +101,7 @@ function App() {
     <div className='layout'>
       <header className='header'>
         <h1>Central Bookings</h1>
+        <h1>Activity List</h1>
       </header>
 
       {/* filters */}
